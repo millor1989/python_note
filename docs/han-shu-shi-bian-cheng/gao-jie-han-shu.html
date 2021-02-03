@@ -1,0 +1,1005 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>高阶函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fan-hui-han-shu.html" />
+    
+    
+    <link rel="prev" href="../han-shu-shi-bian-cheng.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../kuai-su-kai-shi.html">
+            
+                <a href="../kuai-su-kai-shi.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ji-chu.html">
+            
+                <a href="../ji-chu.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../han-shu.html">
+            
+                <a href="../han-shu.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../gao-ji-te-xing.html">
+            
+                <a href="../gao-ji-te-xing.html">
+            
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../han-shu-shi-bian-cheng.html">
+            
+                <a href="../han-shu-shi-bian-cheng.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="gao-jie-han-shu.html">
+            
+                <a href="gao-jie-han-shu.html">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="fan-hui-han-shu.html">
+            
+                <a href="fan-hui-han-shu.html">
+            
+                    
+                    返回函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="ni-ming-han-shu.html">
+            
+                <a href="ni-ming-han-shu.html">
+            
+                    
+                    匿名函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="zhuang-shi-qi.html">
+            
+                <a href="zhuang-shi-qi.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="pian-han-shu.html">
+            
+                <a href="pian-han-shu.html">
+            
+                    
+                    偏函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../mo-kuai.html">
+            
+                <a href="../mo-kuai.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../mian-xiang-dui-xiang-bian-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../mian-xiang-dui-xiang-bian-cheng/lei-he-shi-li.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/lei-he-shi-li.html">
+            
+                    
+                    类和实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../mian-xiang-dui-xiang-bian-cheng/fang-wen-xian-zhi.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/fang-wen-xian-zhi.html">
+            
+                    
+                    访问限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../mian-xiang-dui-xiang-bian-cheng/ji-cheng-he-duo-tai.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/ji-cheng-he-duo-tai.html">
+            
+                    
+                    继承和多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../mian-xiang-dui-xiang-bian-cheng/huo-qu-dui-xiang-xin-xi.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/huo-qu-dui-xiang-xin-xi.html">
+            
+                    
+                    获取对象信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../mian-xiang-dui-xiang-bian-cheng/shi-li-shu-xing-he-lei-shu-xing.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/shi-li-shu-xing-he-lei-shu-xing.html">
+            
+                    
+                    实例属性和类属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng.html">
+            
+                    
+                    面向对象高级编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-yong-slots.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-yong-slots.html">
+            
+                    
+                    使用__slots__
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-7528-property.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-7528-property.html">
+            
+                    
+                    使用@property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/duo-zhong-ji-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/duo-zhong-ji-cheng.html">
+            
+                    
+                    多重继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/ding-zhi-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/ding-zhi-lei.html">
+            
+                    
+                    定制类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/mei-ju-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/mei-ju-lei.html">
+            
+                    
+                    枚举类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/yuan-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/yuan-lei.html">
+            
+                    
+                    元类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../cuo-wu-3001-diao-shi-he-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi.html">
+            
+                    
+                    错误、调试和测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/cuo-wu-chu-li.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/cuo-wu-chu-li.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/diao-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/diao-shi.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/dan-yuan-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/dan-yuan-ce-shi.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/wen-dang-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/wen-dang-ce-shi.html">
+            
+                    
+                    文档测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../iobian-cheng.html">
+            
+                <a href="../iobian-cheng.html">
+            
+                    
+                    IO编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../iobian-cheng/wen-jian-du-xie.html">
+            
+                <a href="../iobian-cheng/wen-jian-du-xie.html">
+            
+                    
+                    文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../iobian-cheng/stringiohe-bytesio.html">
+            
+                <a href="../iobian-cheng/stringiohe-bytesio.html">
+            
+                    
+                    StringIO和BytesIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../iobian-cheng/cao-zuo-wen-jian-he-mu-lu.html">
+            
+                <a href="../iobian-cheng/cao-zuo-wen-jian-he-mu-lu.html">
+            
+                    
+                    操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../iobian-cheng/xu-lie-hua.html">
+            
+                <a href="../iobian-cheng/xu-lie-hua.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../fang-wen-shu-ju-ku.html">
+            
+                <a href="../fang-wen-shu-ju-ku.html">
+            
+                    
+                    访问数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../fang-wen-shu-ju-ku/sqlite.html">
+            
+                <a href="../fang-wen-shu-ju-ku/sqlite.html">
+            
+                    
+                    SQLite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../python-api.html">
+            
+                <a href="../python-api.html">
+            
+                    
+                    python api
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../python-api/datetime.html">
+            
+                <a href="../python-api/datetime.html">
+            
+                    
+                    datetime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../python-api/time.html">
+            
+                <a href="../python-api/time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../qi-ta.html">
+            
+                <a href="../qi-ta.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.html">
+            
+                <a href="../qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.html">
+            
+                    
+                    调用操作系统ping命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >高阶函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x9AD8;&#x9636;&#x51FD;&#x6570;&#xFF08;high-order-function&#xFF09;">&#x9AD8;&#x9636;&#x51FD;&#x6570;&#xFF08;High-order function&#xFF09;</h3>
+<h4 id="1&#x3001;&#x6982;&#x5FF5;">1&#x3001;&#x6982;&#x5FF5;</h4>
+<h5 id="11&#x3001;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x6307;&#x5411;&#x51FD;&#x6570;">1.1&#x3001;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x6307;&#x5411;&#x51FD;&#x6570;</h5>
+<p>&#x4EE5;Python&#x5185;&#x7F6E;&#x51FD;&#x6570;<code>abs()</code>&#x4E3A;&#x4F8B;&#xFF0C;&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>abs(<span class="hljs-number">-10</span>)
+<span class="hljs-number">10</span>
+</code></pre>
+<p>&#x800C;&#xFF0C;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>abs
+&lt;built-<span class="hljs-keyword">in</span> function abs&gt;
+</code></pre>
+<p>&#x53EF;&#x89C1;<code>abs</code>&#x662F;&#x51FD;&#x6570;&#x672C;&#x8EAB;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;&#xFF0C;&#x51FD;&#x6570;&#x672C;&#x8EAB;&#x4E5F;&#x53EF;&#x4EE5;&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;&#xFF08;&#x5373;&#xFF0C;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x6307;&#x5411;&#x51FD;&#x6570;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>x = abs(<span class="hljs-number">-10</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>x
+<span class="hljs-number">10</span>
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>f = abs
+<span class="hljs-meta">&gt;&gt;&gt; </span>f
+&lt;built-<span class="hljs-keyword">in</span> function abs&gt;
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>f(<span class="hljs-number">-10</span>)
+<span class="hljs-number">10</span>
+</code></pre>
+<h5 id="12&#x3001;&#x51FD;&#x6570;&#x540D;&#x4E5F;&#x662F;&#x53D8;&#x91CF;&#x540D;">1.2&#x3001;&#x51FD;&#x6570;&#x540D;&#x4E5F;&#x662F;&#x53D8;&#x91CF;&#x540D;</h5>
+<p>&#x51FD;&#x6570;&#x540D;&#x5C31;&#x662F;&#x6307;&#x5411;&#x51FD;&#x6570;&#x7684;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5C06;&#x51FD;&#x6570;&#x540D;&#x770B;&#x6210;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x6307;&#x5411;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x8BA1;&#x7B97;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x65E2;&#x7136;&#x51FD;&#x6570;&#x540D;&#x662F;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x5C31;&#x53EF;&#x4EE5;&#x6307;&#x5411;&#x5176;&#x5B83;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>abs = <span class="hljs-number">10</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>abs(<span class="hljs-number">-10</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-string">&apos;int&apos;</span> object <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> callable
+</code></pre>
+<p><code>abs</code>&#x6307;&#x5411;&#x6574;&#x6570;&#x540E;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x7EDD;&#x5BF9;&#x503C;&#x8BA1;&#x7B97;&#x4E86;&#x3002;</p>
+<p>&#x5B9E;&#x9645;&#x4EE3;&#x7801;&#x662F;&#x4E0D;&#x80FD;&#x8FD9;&#x6837;&#x5199;&#x7684;&#xFF0C;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x53D8;&#x91CF;&#x540D;&#x4E0E;&#x51FD;&#x6570;&#x540D;&#x7684;&#x6DF7;&#x4E71;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x6062;&#x590D;<code>abs</code>&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x8BA1;&#x7B97;&#x51FD;&#x6570;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x542F;Python&#x4EA4;&#x4E92;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x6CE8;&#xFF1A;&#x7531;&#x4E8E;<code>abs</code>&#x51FD;&#x6570;&#x5B9E;&#x9645;&#x4E0A;&#x5B9A;&#x4E49;&#x5728;<code>builtins</code>&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x8BA9;&#x4FEE;&#x6539;<code>abs</code>&#x53D8;&#x91CF;&#x7684;&#x6307;&#x5411;&#x5728;&#x5176;&#x5B83;&#x6A21;&#x5757;&#x4E5F;&#x751F;&#x6548;&#xFF0C;&#x8981;&#x7528;<code>import builtins;builtins.abs=10</code>&#x3002;</p>
+<h5 id="13&#x3001;&#x4F20;&#x5165;&#x51FD;&#x6570;">1.3&#x3001;&#x4F20;&#x5165;&#x51FD;&#x6570;</h5>
+<p>&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x6307;&#x5411;&#x51FD;&#x6570;&#xFF0C;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x80FD;&#x63A5;&#x6536;&#x53D8;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x80FD;&#x63A5;&#x53D7;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x5C31;&#x79F0;&#x4E3A;&#x9AD8;&#x9636;&#x51FD;&#x6570;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(x, y, f)</span>:</span>
+    <span class="hljs-keyword">return</span> f(x) + f(y)
+</code></pre>
+<p>&#x6267;&#x884C;<code>add(-5,6,abs)</code>&#x65F6;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E;&#x6267;&#x884C;<code>abs(-5) + abs(6)</code>&#x3002;</p>
+<h4 id="2&#x3001;mapreduce">2&#x3001;map/reduce</h4>
+<p>map/reduce&#x7684;&#x6982;&#x5FF5;&#x6765;&#x6E90;&#x4E8E;Google&#x7684;&#x8BBA;&#x6587;&#x201C;<a href="http://research.google.com/archive/mapreduce.html" target="_blank">MapReduce: Simplified Data Processing on Large Clusters</a>&#x201D;&#x3002;</p>
+<p>Python&#x5185;&#x5EFA;&#x4E86;<code>map()</code>&#x51FD;&#x6570;&#x548C;<code>reduce()</code>&#x51FD;&#x6570;&#x3002;</p>
+<h5 id="21&#x3001;map">2.1&#x3001;map</h5>
+<p><code>map()</code>&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;<code>Iterable</code>&#xFF0C;&#x5BF9;<code>Iterable</code>&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6267;&#x884C;&#x4F20;&#x5165;&#x7684;&#x51FD;&#x6570;&#x8FD0;&#x7B97;&#xFF0C;&#x5C06;&#x7ED3;&#x679C;&#x4F5C;&#x4E3A;&#x65B0;&#x7684;<code>Iterator</code>&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x51FD;&#x6570;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>&#xFF0C;&#x4F5C;&#x7528;&#x4E8E;list<code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>&#xFF0C;&#x53EF;&#x4EE5;&#x7528;<code>map()</code>&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-ascii">            f(x) = x * x
+
+                  &#x2502;
+                  &#x2502;
+  &#x250C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2510;
+  &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;
+  &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;
+
+[ 1   2   3   4   5   6   7   8   9 ]
+
+  &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;
+  &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;   &#x2502;
+  &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;   &#x25BC;
+
+[ 1   4   9  16  25  36  49  64  81 ]
+</code></pre>
+<p>Python&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f</span><span class="hljs-params">(x)</span>:</span>
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">return</span> x * x
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>r = map(f, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>list(r)
+[<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>, <span class="hljs-number">25</span>, <span class="hljs-number">36</span>, <span class="hljs-number">49</span>, <span class="hljs-number">64</span>, <span class="hljs-number">81</span>]
+</code></pre>
+<p>&#x5176;&#x4E2D;&#x7528;<code>list()</code>&#x51FD;&#x6570;&#x8BA1;&#x7B97;&#x51FA;&#x4E86;&#x7ED3;&#x679C;&#x8FED;&#x4EE3;&#x5668;<code>r</code>&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;list&#x3002;</p>
+<p><code>map()</code>&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x9AD8;&#x9636;&#x51FD;&#x6570;&#xFF0C;&#x5C06;&#x8FD0;&#x7B97;&#x89C4;&#x5219;&#x62BD;&#x8C61;&#x5316;&#x4E86;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x5BF9;<code>Iterable</code>&#x5BF9;&#x8C61;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x590D;&#x6742;&#x7684;&#x51FD;&#x6570;&#x8FD0;&#x7B97;&#x3002;</p>
+<h5 id="22&#x3001;reduce">2.2&#x3001;reduce</h5>
+<p><code>reduce(function, sequence[, initial])</code>&#x51FD;&#x6570;&#xFF0C;&#x7D2F;&#x79EF;&#x5F0F;&#x5730;&#x5C06;<strong>&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;</strong>&#x5E94;&#x7528;&#x4E8E;&#x5E8F;&#x5217;&#x7684;&#x6BCF;&#x4E00;&#x9879;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;<code>reduce</code>&#x5B9E;&#x73B0;&#x5E8F;&#x5217;&#x7684;&#x6C42;&#x548C;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> reduce
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(x, y)</span>:</span>
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">return</span> x + y
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>reduce(add, [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>])
+<span class="hljs-number">25</span>
+</code></pre>
+<p>&#x518D;&#x6BD4;&#x5982;&#xFF0C;&#x5C06;&#x5E8F;&#x5217;<code>[1, 3, 5, 7, 9]</code>&#x53D8;&#x6362;&#x6210;&#x6574;&#x6570;<code>13579</code>&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> reduce
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fn</span><span class="hljs-params">(x, y)</span>:</span>
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">return</span> x * <span class="hljs-number">10</span> + y
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>reduce(fn, [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>])
+<span class="hljs-number">13579</span>
+</code></pre>
+<p>&#x7ED3;&#x5408;<code>map</code>&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5C06;<code>str</code>&#x8F6C;&#x6362;&#x4E3A;<code>int</code>&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> reduce
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fn</span><span class="hljs-params">(x, y)</span>:</span>
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">return</span> x * <span class="hljs-number">10</span> + y
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">char2num</span><span class="hljs-params">(s)</span>:</span>
+<span class="hljs-meta">... </span>    digits = {<span class="hljs-string">&apos;0&apos;</span>: <span class="hljs-number">0</span>, <span class="hljs-string">&apos;1&apos;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&apos;2&apos;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&apos;3&apos;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&apos;4&apos;</span>: <span class="hljs-number">4</span>, <span class="hljs-string">&apos;5&apos;</span>: <span class="hljs-number">5</span>, <span class="hljs-string">&apos;6&apos;</span>: <span class="hljs-number">6</span>, <span class="hljs-string">&apos;7&apos;</span>: <span class="hljs-number">7</span>, <span class="hljs-string">&apos;8&apos;</span>: <span class="hljs-number">8</span>, <span class="hljs-string">&apos;9&apos;</span>: <span class="hljs-number">9</span>}
+<span class="hljs-meta">... </span>    <span class="hljs-keyword">return</span> digits[s]
+...
+<span class="hljs-meta">&gt;&gt;&gt; </span>reduce(fn, map(char2num, <span class="hljs-string">&apos;13579&apos;</span>))
+<span class="hljs-number">13579</span>
+</code></pre>
+<p>&#x6574;&#x5408;&#x4E3A;&#x4E00;&#x4E2A;<code>str2int</code>&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> reduce
+
+DIGITS = {<span class="hljs-string">&apos;0&apos;</span>: <span class="hljs-number">0</span>, <span class="hljs-string">&apos;1&apos;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&apos;2&apos;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&apos;3&apos;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&apos;4&apos;</span>: <span class="hljs-number">4</span>, <span class="hljs-string">&apos;5&apos;</span>: <span class="hljs-number">5</span>, <span class="hljs-string">&apos;6&apos;</span>: <span class="hljs-number">6</span>, <span class="hljs-string">&apos;7&apos;</span>: <span class="hljs-number">7</span>, <span class="hljs-string">&apos;8&apos;</span>: <span class="hljs-number">8</span>, <span class="hljs-string">&apos;9&apos;</span>: <span class="hljs-number">9</span>}
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">str2int</span><span class="hljs-params">(s)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fn</span><span class="hljs-params">(x, y)</span>:</span>
+        <span class="hljs-keyword">return</span> x * <span class="hljs-number">10</span> + y
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">char2num</span><span class="hljs-params">(s)</span>:</span>
+        <span class="hljs-keyword">return</span> DIGITS[s]
+    <span class="hljs-keyword">return</span> reduce(fn, map(char2num, s))
+</code></pre>
+<p>&#x4F7F;&#x7528;lambda&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x8FDB;&#x4E00;&#x6B65;&#x7B80;&#x5316;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> reduce
+
+DIGITS = {<span class="hljs-string">&apos;0&apos;</span>: <span class="hljs-number">0</span>, <span class="hljs-string">&apos;1&apos;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&apos;2&apos;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&apos;3&apos;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&apos;4&apos;</span>: <span class="hljs-number">4</span>, <span class="hljs-string">&apos;5&apos;</span>: <span class="hljs-number">5</span>, <span class="hljs-string">&apos;6&apos;</span>: <span class="hljs-number">6</span>, <span class="hljs-string">&apos;7&apos;</span>: <span class="hljs-number">7</span>, <span class="hljs-string">&apos;8&apos;</span>: <span class="hljs-number">8</span>, <span class="hljs-string">&apos;9&apos;</span>: <span class="hljs-number">9</span>}
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">char2num</span><span class="hljs-params">(s)</span>:</span>
+    <span class="hljs-keyword">return</span> DIGITS[s]
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">str2int</span><span class="hljs-params">(s)</span>:</span>
+    <span class="hljs-keyword">return</span> reduce(<span class="hljs-keyword">lambda</span> x, y: x * <span class="hljs-number">10</span> + y, map(char2num, s))
+</code></pre>
+<h4 id="3&#x3001;filter">3&#x3001;filter</h4>
+<p>Python&#x5185;&#x5EFA;&#x7684;<code>filter()</code>&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8FC7;&#x6EE4;&#x5E8F;&#x5217;&#xFF0C;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x548C;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#xFF0C;&#x628A;&#x4F20;&#x5165;&#x7684;&#x51FD;&#x6570;&#x4F9D;&#x6B21;&#x4F5C;&#x7528;&#x4E8E;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x503C;&#x662F;<code>True</code>&#x8FD8;&#x662F;<code>False</code>&#x51B3;&#x5B9A;&#x4FDD;&#x7559;&#x8FD8;&#x662F;&#x4E22;&#x5F03;&#x8BE5;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;<code>filter()</code>&#x51FD;&#x6570;<strong>&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;<code>Iteraotr</code></strong>&#xFF0C;&#x662F;&#x60F0;&#x6027;&#x7684;&#xFF01;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x8FC7;&#x6EE4;&#x6389;list&#x4E2D;&#x7684;&#x5076;&#x6570;&#xFF0C;&#x4FDD;&#x7559;&#x5947;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_odd</span><span class="hljs-params">(n)</span>:</span>
+    <span class="hljs-keyword">return</span> n % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>
+
+list(filter(is_odd, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">15</span>]))
+<span class="hljs-comment"># &#x7ED3;&#x679C;: [1, 5, 9, 15]</span>
+</code></pre>
+<h5 id="31&#x3001;&#x4F8B;&#xFF0C;&#x7528;filter&#x51FD;&#x6570;&#x6C42;&#x6240;&#x6709;&#x7684;&#x7D20;&#x6570;">3.1&#x3001;&#x4F8B;&#xFF0C;&#x7528;<code>filter</code>&#x51FD;&#x6570;&#x6C42;&#x6240;&#x6709;&#x7684;&#x7D20;&#x6570;</h5>
+<p>&#x5148;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x4ECE;<code>3</code>&#x5F00;&#x59CB;&#x7684;&#x5947;&#x6570;&#x5E8F;&#x5217;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_odd_iter</span><span class="hljs-params">()</span>:</span>
+    n = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        n = n + <span class="hljs-number">2</span>
+        <span class="hljs-keyword">yield</span> n
+</code></pre>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x7B5B;&#x9009;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_not_divisible</span><span class="hljs-params">(n)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">lambda</span> x: x % n &gt; <span class="hljs-number">0</span>
+</code></pre>
+<p>&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x662F;<code>lambda</code>&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x4E2A;&#x7D20;&#x6570;&#x7684;&#x751F;&#x6210;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">primes</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">yield</span> <span class="hljs-number">2</span>
+    it = _odd_iter() <span class="hljs-comment"># &#x521D;&#x59CB;&#x5E8F;&#x5217;</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        n = next(it) <span class="hljs-comment"># &#x8FD4;&#x56DE;&#x5E8F;&#x5217;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;</span>
+        <span class="hljs-keyword">yield</span> n
+        it = filter(_not_divisible(n), it) <span class="hljs-comment"># &#x6784;&#x9020;&#x65B0;&#x5E8F;&#x5217;</span>
+</code></pre>
+<p>&#x6253;&#x5370;1000&#x4EE5;&#x5185;&#x7684;&#x6240;&#x6709;&#x7D20;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6253;&#x5370;1000&#x4EE5;&#x5185;&#x7684;&#x7D20;&#x6570;:</span>
+<span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> primes():
+    <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">1000</span>:
+        print(n)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">break</span>
+</code></pre>
+<h4 id="4&#x3001;sorted">4&#x3001;sorted</h4>
+<p>Python&#x5185;&#x7F6E;&#x4E86;<code>sorted()</code>&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;list&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>sorted([<span class="hljs-number">36</span>, <span class="hljs-number">5</span>, <span class="hljs-number">-12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">-21</span>])
+[<span class="hljs-number">-21</span>, <span class="hljs-number">-12</span>, <span class="hljs-number">5</span>, <span class="hljs-number">9</span>, <span class="hljs-number">36</span>]
+</code></pre>
+<p>&#x540C;&#x65F6;&#xFF0C;<code>sorted()</code>&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x9636;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x4E00;&#x4E2A;<strong><code>key</code>&#x51FD;&#x6570;</strong>&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6392;&#x5E8F;&#x3002;&#x6BD4;&#x5982;&#x6309;&#x7EDD;&#x5BF9;&#x503C;&#x5927;&#x5C0F;&#x6392;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>sorted([<span class="hljs-number">36</span>, <span class="hljs-number">5</span>, <span class="hljs-number">-12</span>, <span class="hljs-number">9</span>, <span class="hljs-number">-21</span>], key=abs)
+[<span class="hljs-number">5</span>, <span class="hljs-number">9</span>, <span class="hljs-number">-12</span>, <span class="hljs-number">-21</span>, <span class="hljs-number">36</span>]
+</code></pre>
+<p><code>key</code>&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x4E8E;list&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;<code>sorted()</code>&#x51FD;&#x6570;&#x6839;&#x636E;<code>key</code>&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>sorted()</code>&#x51FD;&#x6570;&#x9ED8;&#x8BA4;&#x6309;&#x7167;ASCII&#x7684;&#x5927;&#x5C0F;&#x6392;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>sorted([<span class="hljs-string">&apos;bob&apos;</span>, <span class="hljs-string">&apos;about&apos;</span>, <span class="hljs-string">&apos;Zoo&apos;</span>, <span class="hljs-string">&apos;Credit&apos;</span>])
+[<span class="hljs-string">&apos;Credit&apos;</span>, <span class="hljs-string">&apos;Zoo&apos;</span>, <span class="hljs-string">&apos;about&apos;</span>, <span class="hljs-string">&apos;bob&apos;</span>]
+</code></pre>
+<p>&#x5982;&#x679C;&#x8981;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;<code>str.lower</code>&#x51FD;&#x6570;&#x4F5C;&#x4E3A;<code>key</code>&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>sorted([<span class="hljs-string">&apos;bob&apos;</span>, <span class="hljs-string">&apos;about&apos;</span>, <span class="hljs-string">&apos;Zoo&apos;</span>, <span class="hljs-string">&apos;Credit&apos;</span>], key=str.lower)
+[<span class="hljs-string">&apos;about&apos;</span>, <span class="hljs-string">&apos;bob&apos;</span>, <span class="hljs-string">&apos;Credit&apos;</span>, <span class="hljs-string">&apos;Zoo&apos;</span>]
+</code></pre>
+<p>&#x5982;&#x679C;&#x8981;&#x8FDB;&#x884C;<strong>&#x53CD;&#x5411;&#x6392;&#x5E8F;</strong>&#xFF0C;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;<code>reverse=True</code>&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>sorted([<span class="hljs-string">&apos;bob&apos;</span>, <span class="hljs-string">&apos;about&apos;</span>, <span class="hljs-string">&apos;Zoo&apos;</span>, <span class="hljs-string">&apos;Credit&apos;</span>], key=str.lower, reverse=<span class="hljs-keyword">True</span>)
+[<span class="hljs-string">&apos;Zoo&apos;</span>, <span class="hljs-string">&apos;Credit&apos;</span>, <span class="hljs-string">&apos;bob&apos;</span>, <span class="hljs-string">&apos;about&apos;</span>]
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../han-shu-shi-bian-cheng.html" class="navigation navigation-prev " aria-label="Previous page: 函数式编程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="fan-hui-han-shu.html" class="navigation navigation-next " aria-label="Next page: 返回函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"高阶函数","level":"1.6.1","depth":2,"next":{"title":"返回函数","level":"1.6.2","depth":2,"path":"han-shu-shi-bian-cheng/fan-hui-han-shu.md","ref":"han-shu-shi-bian-cheng/fan-hui-han-shu.md","articles":[]},"previous":{"title":"函数式编程","level":"1.6","depth":1,"path":"han-shu-shi-bian-cheng.md","ref":"han-shu-shi-bian-cheng.md","articles":[{"title":"高阶函数","level":"1.6.1","depth":2,"path":"han-shu-shi-bian-cheng/gao-jie-han-shu.md","ref":"han-shu-shi-bian-cheng/gao-jie-han-shu.md","articles":[]},{"title":"返回函数","level":"1.6.2","depth":2,"path":"han-shu-shi-bian-cheng/fan-hui-han-shu.md","ref":"han-shu-shi-bian-cheng/fan-hui-han-shu.md","articles":[]},{"title":"匿名函数","level":"1.6.3","depth":2,"path":"han-shu-shi-bian-cheng/ni-ming-han-shu.md","ref":"han-shu-shi-bian-cheng/ni-ming-han-shu.md","articles":[]},{"title":"装饰器","level":"1.6.4","depth":2,"path":"han-shu-shi-bian-cheng/zhuang-shi-qi.md","ref":"han-shu-shi-bian-cheng/zhuang-shi-qi.md","articles":[]},{"title":"偏函数","level":"1.6.5","depth":2,"path":"han-shu-shi-bian-cheng/pian-han-shu.md","ref":"han-shu-shi-bian-cheng/pian-han-shu.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"han-shu-shi-bian-cheng/gao-jie-han-shu.md","mtime":"2021-01-25T03:57:40.271Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-03T06:53:08.490Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

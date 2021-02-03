@@ -1,0 +1,866 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SQLite · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python-api.html" />
+    
+    
+    <link rel="prev" href="../fang-wen-shu-ju-ku.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../kuai-su-kai-shi.html">
+            
+                <a href="../kuai-su-kai-shi.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ji-chu.html">
+            
+                <a href="../ji-chu.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../han-shu.html">
+            
+                <a href="../han-shu.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../gao-ji-te-xing.html">
+            
+                <a href="../gao-ji-te-xing.html">
+            
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../han-shu-shi-bian-cheng.html">
+            
+                <a href="../han-shu-shi-bian-cheng.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../han-shu-shi-bian-cheng/gao-jie-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/gao-jie-han-shu.html">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../han-shu-shi-bian-cheng/fan-hui-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/fan-hui-han-shu.html">
+            
+                    
+                    返回函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../han-shu-shi-bian-cheng/ni-ming-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/ni-ming-han-shu.html">
+            
+                    
+                    匿名函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../han-shu-shi-bian-cheng/zhuang-shi-qi.html">
+            
+                <a href="../han-shu-shi-bian-cheng/zhuang-shi-qi.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../han-shu-shi-bian-cheng/pian-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/pian-han-shu.html">
+            
+                    
+                    偏函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../mo-kuai.html">
+            
+                <a href="../mo-kuai.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../mian-xiang-dui-xiang-bian-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../mian-xiang-dui-xiang-bian-cheng/lei-he-shi-li.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/lei-he-shi-li.html">
+            
+                    
+                    类和实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../mian-xiang-dui-xiang-bian-cheng/fang-wen-xian-zhi.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/fang-wen-xian-zhi.html">
+            
+                    
+                    访问限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../mian-xiang-dui-xiang-bian-cheng/ji-cheng-he-duo-tai.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/ji-cheng-he-duo-tai.html">
+            
+                    
+                    继承和多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../mian-xiang-dui-xiang-bian-cheng/huo-qu-dui-xiang-xin-xi.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/huo-qu-dui-xiang-xin-xi.html">
+            
+                    
+                    获取对象信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../mian-xiang-dui-xiang-bian-cheng/shi-li-shu-xing-he-lei-shu-xing.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/shi-li-shu-xing-he-lei-shu-xing.html">
+            
+                    
+                    实例属性和类属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng.html">
+            
+                    
+                    面向对象高级编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-yong-slots.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-yong-slots.html">
+            
+                    
+                    使用__slots__
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-7528-property.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-7528-property.html">
+            
+                    
+                    使用@property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/duo-zhong-ji-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/duo-zhong-ji-cheng.html">
+            
+                    
+                    多重继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/ding-zhi-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/ding-zhi-lei.html">
+            
+                    
+                    定制类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/mei-ju-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/mei-ju-lei.html">
+            
+                    
+                    枚举类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/yuan-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/yuan-lei.html">
+            
+                    
+                    元类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../cuo-wu-3001-diao-shi-he-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi.html">
+            
+                    
+                    错误、调试和测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/cuo-wu-chu-li.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/cuo-wu-chu-li.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/diao-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/diao-shi.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/dan-yuan-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/dan-yuan-ce-shi.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/wen-dang-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/wen-dang-ce-shi.html">
+            
+                    
+                    文档测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../iobian-cheng.html">
+            
+                <a href="../iobian-cheng.html">
+            
+                    
+                    IO编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../iobian-cheng/wen-jian-du-xie.html">
+            
+                <a href="../iobian-cheng/wen-jian-du-xie.html">
+            
+                    
+                    文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../iobian-cheng/stringiohe-bytesio.html">
+            
+                <a href="../iobian-cheng/stringiohe-bytesio.html">
+            
+                    
+                    StringIO和BytesIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../iobian-cheng/cao-zuo-wen-jian-he-mu-lu.html">
+            
+                <a href="../iobian-cheng/cao-zuo-wen-jian-he-mu-lu.html">
+            
+                    
+                    操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../iobian-cheng/xu-lie-hua.html">
+            
+                <a href="../iobian-cheng/xu-lie-hua.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../fang-wen-shu-ju-ku.html">
+            
+                <a href="../fang-wen-shu-ju-ku.html">
+            
+                    
+                    访问数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.12.1" data-path="sqlite.html">
+            
+                <a href="sqlite.html">
+            
+                    
+                    SQLite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../python-api.html">
+            
+                <a href="../python-api.html">
+            
+                    
+                    python api
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../python-api/datetime.html">
+            
+                <a href="../python-api/datetime.html">
+            
+                    
+                    datetime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../python-api/time.html">
+            
+                <a href="../python-api/time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../qi-ta.html">
+            
+                <a href="../qi-ta.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.html">
+            
+                <a href="../qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.html">
+            
+                    
+                    调用操作系统ping命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SQLite</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x4F7F;&#x7528;sqlite">&#x4F7F;&#x7528;SQLite</h3>
+<p>SQLite&#x662F;&#x4E00;&#x4E2A;&#x5D4C;&#x5165;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7531;C&#x8BED;&#x8A00;&#x7F16;&#x5199;&#xFF0C;&#x4F53;&#x79EF;&#x5F88;&#x5C0F;&#xFF0C;&#x53EF;&#x4EE5;&#x96C6;&#x6210;&#x5230;&#x5404;&#x79CD;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6216;&#x8005;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x5E94;&#x7528;&#x4E2D;&#x3002;&#x5B83;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<p>Python&#x5185;&#x7F6E;&#x4E86;SQLite3&#xFF0C;Python&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x5957;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x63A5;&#x53E3;&#x7684;API&#xFF0C;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x5E93;&#x53EA;&#x8981;&#x63D0;&#x4F9B;&#x7B26;&#x5408;Python&#x6807;&#x51C6;&#x7684;&#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Python&#x8FDE;&#x63A5;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>Python&#x64CD;&#x4F5C;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x521B;&#x5EFA;&#x5230;&#x6570;&#x636E;&#x7684;&#x8FDE;&#x63A5;<code>Connection</code>;&#x8FDE;&#x63A5;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x6253;&#x5F00;&#x6E38;&#x6807;<code>Cursor</code>&#xFF0C;&#x901A;&#x8FC7;<code>Cursor</code>&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#xFF0C;&#x7136;&#x540E;&#x83B7;&#x5F97;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3002;</p>
+<p>Python&#x64CD;&#x4F5C;SQLite&#xFF0C;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x3001;&#x521B;&#x5EFA;&#x8868;&#x3001;&#x63D2;&#x5165;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5BFC;&#x5165;SQLite&#x9A71;&#x52A8;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> sqlite3
+<span class="hljs-comment"># &#x8FDE;&#x63A5;&#x5230;SQLite&#x6570;&#x636E;&#x5E93;</span>
+<span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x662F;test.db</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x521B;&#x5EFA;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>conn = sqlite3.connect(<span class="hljs-string">&apos;test.db&apos;</span>)
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;Cursor:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor = conn.cursor()
+<span class="hljs-comment"># &#x6267;&#x884C;&#x4E00;&#x6761;SQL&#x8BED;&#x53E5;&#xFF0C;&#x521B;&#x5EFA;user&#x8868;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor.execute(<span class="hljs-string">&apos;create table user (id varchar(20) primary key, name varchar(20))&apos;</span>)
+&lt;sqlite3.Cursor object at <span class="hljs-number">0x10f8aa260</span>&gt;
+<span class="hljs-comment"># &#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E00;&#x6761;SQL&#x8BED;&#x53E5;&#xFF0C;&#x63D2;&#x5165;&#x4E00;&#x6761;&#x8BB0;&#x5F55;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor.execute(<span class="hljs-string">&apos;insert into user (id, name) values (\&apos;1\&apos;, \&apos;Michael\&apos;)&apos;</span>)
+&lt;sqlite3.Cursor object at <span class="hljs-number">0x10f8aa260</span>&gt;
+<span class="hljs-comment"># &#x901A;&#x8FC7;rowcount&#x83B7;&#x5F97;&#x63D2;&#x5165;&#x7684;&#x884C;&#x6570;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor.rowcount
+<span class="hljs-number">1</span>
+<span class="hljs-comment"># &#x5173;&#x95ED;Cursor:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor.close()
+<span class="hljs-comment"># &#x63D0;&#x4EA4;&#x4E8B;&#x52A1;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>conn.commit()
+<span class="hljs-comment"># &#x5173;&#x95ED;Connection:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>conn.close()
+</code></pre>
+<p>&#x67E5;&#x8BE2;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>conn = sqlite3.connect(<span class="hljs-string">&apos;test.db&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor = conn.cursor()
+<span class="hljs-comment"># &#x6267;&#x884C;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor.execute(<span class="hljs-string">&apos;select * from user where id=?&apos;</span>, (<span class="hljs-string">&apos;1&apos;</span>,))
+&lt;sqlite3.Cursor object at <span class="hljs-number">0x10f8aa340</span>&gt;
+<span class="hljs-comment"># &#x83B7;&#x5F97;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x96C6;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>values = cursor.fetchall()
+<span class="hljs-meta">&gt;&gt;&gt; </span>values
+[(<span class="hljs-string">&apos;1&apos;</span>, <span class="hljs-string">&apos;Michael&apos;</span>)]
+<span class="hljs-meta">&gt;&gt;&gt; </span>cursor.close()
+<span class="hljs-meta">&gt;&gt;&gt; </span>conn.close()
+</code></pre>
+<p>&#x4F7F;&#x7528;Python&#x7684;DB-API&#x65F6;&#xFF0C;<code>Connection</code>&#x548C;<code>Cursor</code>&#x5BF9;&#x8C61;&#x6253;&#x5F00;&#x540E;&#x4E00;&#x5B9A;&#x8981;&#x8BB0;&#x5F97;&#x5173;&#x95ED;&#x3002;</p>
+<p><code>Cursor</code>&#x5BF9;&#x8C61;&#x6267;&#x884C;<code>insert</code>&#x3001;<code>update</code>&#x3001;<code>delete</code>&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;<code>rowcount</code>&#x8FD4;&#x56DE;&#x64CD;&#x4F5C;&#x5F71;&#x54CD;&#x7684;&#x884C;&#x6570;&#xFF0C;&#x5373;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3002;</p>
+<p><code>Cursor</code>&#x5BF9;&#x8C61;&#x6267;&#x884C;<code>Select</code>&#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;<code>fetchall()</code>&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x6240;&#x6709;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#xFF0C;&#x7ED3;&#x679C;&#x96C6;&#x662F;<code>list</code>&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x4E00;&#x4E2A;<code>tuple</code>&#x2014;&#x2014;&#x5BF9;&#x5E94;&#x4E00;&#x884C;&#x8BB0;&#x5F55;&#x3002;</p>
+<p>SQL&#x8BED;&#x53E5;&#x5E26;&#x6709;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x628A;&#x53C2;&#x6570;&#x6309;&#x7167;&#x4F4D;&#x7F6E;&#x4F20;&#x9012;&#x7ED9;<code>execute()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5360;&#x4F4D;&#x7B26;<code>?</code>&#x7684;&#x4E2A;&#x6570;&#x5BF9;&#x5E94;&#x53C2;&#x6570;&#x7684;&#x4E2A;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python">cursor.execute(<span class="hljs-string">&apos;select * from user where name=? and pwd=?&apos;</span>, (<span class="hljs-string">&apos;abc&apos;</span>, <span class="hljs-string">&apos;password&apos;</span>))
+</code></pre>
+<h4 id="1&#x3001;&#x5173;&#x4E8E;sqlite">1&#x3001;&#x5173;&#x4E8E;SQLite</h4>
+<p>SQLite&#x5728;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x65B9;&#x9762;&#x975E;&#x5E38;&#x7075;&#x6D3B;&#xFF0C;&#x662F;&#x5F39;&#x6027;&#x7C7B;&#x578B;&#x7684;&#xFF08;flexibly typed&#xFF09;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5176;&#x5B83;&#x521A;&#x6027;&#x7C7B;&#x578B;&#xFF08;rigidly typed&#xFF09;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>SQLite&#x4E5F;&#x6709;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x52A8;&#x6001;&#x7C7B;&#x578B;&#x7CFB;&#x7EDF;&#xFF08;dynamic type system&#xFF09;&#x3002;&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1B;&#x5373;&#x4F7F;&#x6307;&#x5B9A;&#x4E86;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x5176;&#x5B83;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>SQLite<strong>&#x4E0D;&#x652F;&#x6301;&#x5E76;&#x53D1;&#x5199;&#x5165;&#x64CD;&#x4F5C;</strong>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../fang-wen-shu-ju-ku.html" class="navigation navigation-prev " aria-label="Previous page: 访问数据库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python-api.html" class="navigation navigation-next " aria-label="Next page: python api">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SQLite","level":"1.12.1","depth":2,"next":{"title":"python api","level":"1.13","depth":1,"path":"python-api.md","ref":"python-api.md","articles":[{"title":"datetime","level":"1.13.1","depth":2,"path":"python-api/datetime.md","ref":"python-api/datetime.md","articles":[]},{"title":"time","level":"1.13.2","depth":2,"path":"python-api/time.md","ref":"python-api/time.md","articles":[]}]},"previous":{"title":"访问数据库","level":"1.12","depth":1,"path":"fang-wen-shu-ju-ku.md","ref":"fang-wen-shu-ju-ku.md","articles":[{"title":"SQLite","level":"1.12.1","depth":2,"path":"fang-wen-shu-ju-ku/sqlite.md","ref":"fang-wen-shu-ju-ku/sqlite.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fang-wen-shu-ju-ku/sqlite.md","mtime":"2021-01-28T06:23:50.646Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-03T06:53:08.490Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

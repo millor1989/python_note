@@ -1,0 +1,877 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>操作文件和目录 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="xu-lie-hua.html" />
+    
+    
+    <link rel="prev" href="stringiohe-bytesio.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../kuai-su-kai-shi.html">
+            
+                <a href="../kuai-su-kai-shi.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ji-chu.html">
+            
+                <a href="../ji-chu.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../han-shu.html">
+            
+                <a href="../han-shu.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../gao-ji-te-xing.html">
+            
+                <a href="../gao-ji-te-xing.html">
+            
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../han-shu-shi-bian-cheng.html">
+            
+                <a href="../han-shu-shi-bian-cheng.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../han-shu-shi-bian-cheng/gao-jie-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/gao-jie-han-shu.html">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../han-shu-shi-bian-cheng/fan-hui-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/fan-hui-han-shu.html">
+            
+                    
+                    返回函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../han-shu-shi-bian-cheng/ni-ming-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/ni-ming-han-shu.html">
+            
+                    
+                    匿名函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../han-shu-shi-bian-cheng/zhuang-shi-qi.html">
+            
+                <a href="../han-shu-shi-bian-cheng/zhuang-shi-qi.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../han-shu-shi-bian-cheng/pian-han-shu.html">
+            
+                <a href="../han-shu-shi-bian-cheng/pian-han-shu.html">
+            
+                    
+                    偏函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../mo-kuai.html">
+            
+                <a href="../mo-kuai.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../mian-xiang-dui-xiang-bian-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng.html">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../mian-xiang-dui-xiang-bian-cheng/lei-he-shi-li.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/lei-he-shi-li.html">
+            
+                    
+                    类和实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../mian-xiang-dui-xiang-bian-cheng/fang-wen-xian-zhi.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/fang-wen-xian-zhi.html">
+            
+                    
+                    访问限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../mian-xiang-dui-xiang-bian-cheng/ji-cheng-he-duo-tai.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/ji-cheng-he-duo-tai.html">
+            
+                    
+                    继承和多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../mian-xiang-dui-xiang-bian-cheng/huo-qu-dui-xiang-xin-xi.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/huo-qu-dui-xiang-xin-xi.html">
+            
+                    
+                    获取对象信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../mian-xiang-dui-xiang-bian-cheng/shi-li-shu-xing-he-lei-shu-xing.html">
+            
+                <a href="../mian-xiang-dui-xiang-bian-cheng/shi-li-shu-xing-he-lei-shu-xing.html">
+            
+                    
+                    实例属性和类属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng.html">
+            
+                    
+                    面向对象高级编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-yong-slots.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-yong-slots.html">
+            
+                    
+                    使用__slots__
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-7528-property.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/shi-7528-property.html">
+            
+                    
+                    使用@property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/duo-zhong-ji-cheng.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/duo-zhong-ji-cheng.html">
+            
+                    
+                    多重继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/ding-zhi-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/ding-zhi-lei.html">
+            
+                    
+                    定制类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/mei-ju-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/mei-ju-lei.html">
+            
+                    
+                    枚举类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../mian-xiang-dui-xiang-gao-ji-bian-cheng/yuan-lei.html">
+            
+                <a href="../mian-xiang-dui-xiang-gao-ji-bian-cheng/yuan-lei.html">
+            
+                    
+                    元类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../cuo-wu-3001-diao-shi-he-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi.html">
+            
+                    
+                    错误、调试和测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/cuo-wu-chu-li.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/cuo-wu-chu-li.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/diao-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/diao-shi.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/dan-yuan-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/dan-yuan-ce-shi.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../cuo-wu-3001-diao-shi-he-ce-shi/wen-dang-ce-shi.html">
+            
+                <a href="../cuo-wu-3001-diao-shi-he-ce-shi/wen-dang-ce-shi.html">
+            
+                    
+                    文档测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../iobian-cheng.html">
+            
+                <a href="../iobian-cheng.html">
+            
+                    
+                    IO编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="wen-jian-du-xie.html">
+            
+                <a href="wen-jian-du-xie.html">
+            
+                    
+                    文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="stringiohe-bytesio.html">
+            
+                <a href="stringiohe-bytesio.html">
+            
+                    
+                    StringIO和BytesIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.3" data-path="cao-zuo-wen-jian-he-mu-lu.html">
+            
+                <a href="cao-zuo-wen-jian-he-mu-lu.html">
+            
+                    
+                    操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="xu-lie-hua.html">
+            
+                <a href="xu-lie-hua.html">
+            
+                    
+                    序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../fang-wen-shu-ju-ku.html">
+            
+                <a href="../fang-wen-shu-ju-ku.html">
+            
+                    
+                    访问数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../fang-wen-shu-ju-ku/sqlite.html">
+            
+                <a href="../fang-wen-shu-ju-ku/sqlite.html">
+            
+                    
+                    SQLite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../python-api.html">
+            
+                <a href="../python-api.html">
+            
+                    
+                    python api
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../python-api/datetime.html">
+            
+                <a href="../python-api/datetime.html">
+            
+                    
+                    datetime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../python-api/time.html">
+            
+                <a href="../python-api/time.html">
+            
+                    
+                    time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../qi-ta.html">
+            
+                <a href="../qi-ta.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.html">
+            
+                <a href="../qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.html">
+            
+                    
+                    调用操作系统ping命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >操作文件和目录</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;">&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;</h3>
+<p>Python&#x64CD;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#xFF0C;&#x662F;&#x901A;&#x8FC7;&#x5185;&#x7F6E;&#x7684;<code>os</code>&#x6A21;&#x5757;&#x8C03;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x7684;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> os
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.name <span class="hljs-comment"># &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;</span>
+<span class="hljs-string">&apos;posix&apos;</span>
+</code></pre>
+<p>&#x5982;&#x679C;<code>os.name</code>&#x662F;<code>posix</code>&#xFF0C;&#x8BF4;&#x660E;&#x7CFB;&#x7EDF;&#x662F;<code>Linux</code>&#x3001;<code>Unix</code>&#x6216;<code>Mac OS X</code>&#xFF0C;&#x5982;&#x679C;&#x662F;<code>nt</code>&#xFF0C;&#x5C31;&#x662F;<code>Windows</code>&#x7CFB;&#x7EDF;&#x3002;</p>
+<p>&#x8FD8;&#x53EF;&#x901A;&#x8FC7;<code>uname()</code>&#x51FD;&#x6570;&#xFF08;Windows&#x7CFB;&#x7EDF;&#x4E0D;&#x9002;&#x7528;&#xFF09;&#xFF0C;&#x83B7;&#x53D6;&#x8BE6;&#x7EC6;&#x7684;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>os.uname()
+posix.uname_result(sysname=<span class="hljs-string">&apos;Darwin&apos;</span>, nodename=<span class="hljs-string">&apos;MichaelMacPro.local&apos;</span>, release=<span class="hljs-string">&apos;14.3.0&apos;</span>, version=<span class="hljs-string">&apos;Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64&apos;</span>, machine=<span class="hljs-string">&apos;x86_64&apos;</span>)
+</code></pre>
+<h4 id="1&#x3001;&#x73AF;&#x5883;&#x53D8;&#x91CF;">1&#x3001;&#x73AF;&#x5883;&#x53D8;&#x91CF;</h4>
+<p>&#x901A;&#x8FC7;<code>os.environ</code>&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>os.environ
+environ({<span class="hljs-string">&apos;VERSIONER_PYTHON_PREFER_32_BIT&apos;</span>: <span class="hljs-string">&apos;no&apos;</span>, <span class="hljs-string">&apos;TERM_PROGRAM_VERSION&apos;</span>: <span class="hljs-string">&apos;326&apos;</span>, <span class="hljs-string">&apos;LOGNAME&apos;</span>: <span class="hljs-string">&apos;michael&apos;</span>, <span class="hljs-string">&apos;USER&apos;</span>: <span class="hljs-string">&apos;michael&apos;</span>, <span class="hljs-string">&apos;PATH&apos;</span>: <span class="hljs-string">&apos;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin&apos;</span>, ...})
+</code></pre>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>os.environ.get(key)</code>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>os.environ.get(<span class="hljs-string">&apos;PATH&apos;</span>)
+<span class="hljs-string">&apos;/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/mysql/bin&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.environ.get(<span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;default&apos;</span>)
+<span class="hljs-string">&apos;default&apos;</span>
+</code></pre>
+<h4 id="2&#x3001;&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;">2&#x3001;&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;</h4>
+<p>&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x7684;&#x51FD;&#x6570;&#x4E00;&#x90E8;&#x5206;&#x4F4D;&#x4E8E;<code>os</code>&#x6A21;&#x5757;&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x4F4D;&#x4E8E;<code>os.path</code>&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;<strong>&#x76EE;&#x5F55;&#x7684;&#x67E5;&#x770B;&#x3001;&#x521B;&#x5EFA;&#x548C;&#x5220;&#x9664;</strong>&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.path.abspath(<span class="hljs-string">&apos;.&apos;</span>)
+<span class="hljs-string">&apos;/Users/michael&apos;</span>
+<span class="hljs-comment"># &#x5728;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x76EE;&#x5F55;&#xFF0C;&#x9996;&#x5148;&#x628A;&#x65B0;&#x76EE;&#x5F55;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;&#x8868;&#x793A;&#x51FA;&#x6765;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.path.join(<span class="hljs-string">&apos;/Users/michael&apos;</span>, <span class="hljs-string">&apos;testdir&apos;</span>)
+<span class="hljs-string">&apos;/Users/michael/testdir&apos;</span>
+<span class="hljs-comment"># &#x7136;&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.mkdir(<span class="hljs-string">&apos;/Users/michael/testdir&apos;</span>)
+<span class="hljs-comment"># &#x5220;&#x6389;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.rmdir(<span class="hljs-string">&apos;/Users/michael/testdir&apos;</span>)
+</code></pre>
+<p><strong>&#x8DEF;&#x5F84;&#x7684;&#x8FDE;&#x63A5;</strong>&#x4E0D;&#x8981;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7;<code>os.path.join()</code>&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x540C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;&#x4E0D;&#x540C;&#x3002;<code>Linux\Unix\Mac</code>&#x4E2D;&#x662F;<code>/</code>&#xFF0C;&#x800C;<code>Windows</code>&#x7CFB;&#x7EDF;&#x4E0B;&#x662F;<code>\</code>&#x3002;&#x901A;&#x7528;&#xFF0C;<strong>&#x62C6;&#x5206;&#x8DEF;&#x5F84;</strong>&#x65F6;&#xFF0C;&#x901A;&#x8FC7;<code>os.path.split()</code>&#x51FD;&#x6570;&#xFF08;&#x5C06;&#x8DEF;&#x5F84;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x5206;&#xFF0C;&#x540E;&#x4E00;&#x90E8;&#x5206;&#x603B;&#x662F;&#x6700;&#x540E;&#x7EA7;&#x522B;&#x7684;&#x76EE;&#x5F55;&#x6216;&#x6587;&#x4EF6;&#x540D;&#xFF09;&#x8FDB;&#x884C;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>os.path.split(<span class="hljs-string">&apos;/Users/michael/testdir/file.txt&apos;</span>)
+(<span class="hljs-string">&apos;/Users/michael/testdir&apos;</span>, <span class="hljs-string">&apos;file.txt&apos;</span>)
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x7528;<code>os.path.splitext()</code>&#x51FD;&#x6570;<strong>&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;</strong>&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>os.path.splitext(<span class="hljs-string">&apos;/path/to/file.txt&apos;</span>)
+(<span class="hljs-string">&apos;/path/to/file&apos;</span>, <span class="hljs-string">&apos;.txt&apos;</span>)
+</code></pre>
+<p>&#x8DEF;&#x5F84;&#x7684;&#x62C6;&#x5206;&#x3001;&#x5408;&#x5E76;&#x51FD;&#x6570;&#x5E76;&#x4E0D;&#x8981;&#x6C42;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x771F;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x662F;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><strong>&#x6587;&#x4EF6;&#x7684;&#x91CD;&#x547D;&#x540D;&#x548C;&#x5220;&#x9664;</strong>&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5BF9;&#x6587;&#x4EF6;&#x91CD;&#x547D;&#x540D;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.rename(<span class="hljs-string">&apos;test.txt&apos;</span>, <span class="hljs-string">&apos;test.py&apos;</span>)
+<span class="hljs-comment"># &#x5220;&#x6389;&#x6587;&#x4EF6;:</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>os.remove(<span class="hljs-string">&apos;test.py&apos;</span>)
+</code></pre>
+<p><code>os</code>&#x6A21;&#x5757;&#x6CA1;&#x6709;<strong>&#x6587;&#x4EF6;&#x590D;&#x5236;</strong>&#x51FD;&#x6570;&#xFF0C;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>&#x8BFB;&#x5199;&#x6587;&#x4EF6;</code>&#x64CD;&#x4F5C;&#x5B9E;&#x73B0;&#x3002;</p>
+<p><code>shutil</code>&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x8BF8;&#x5982;<code>copyfile()</code>&#x590D;&#x5236;&#x6587;&#x4EF6;&#x51FD;&#x6570;&#x7B49;&#x5F88;&#x591A;&#x5B9E;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;<code>os</code>&#x6A21;&#x5757;&#x7684;&#x8865;&#x5145;&#xFF1A;</p>
+<pre><code class="lang-python">shutil.copyfile(<span class="hljs-string">&apos;./mydata.txt&apos;</span>, <span class="hljs-string">&apos;./copyofmydata.txt&apos;</span>)
+</code></pre>
+<p><strong>&#x6587;&#x4EF6;&#x8FC7;&#x6EE4;</strong>&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x5217;&#x51FA;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x76EE;&#x5F55;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> os.listdir(<span class="hljs-string">&apos;.&apos;</span>) <span class="hljs-keyword">if</span> os.path.isdir(x)]
+[<span class="hljs-string">&apos;.lein&apos;</span>, <span class="hljs-string">&apos;.local&apos;</span>, <span class="hljs-string">&apos;.m2&apos;</span>, <span class="hljs-string">&apos;.npm&apos;</span>, <span class="hljs-string">&apos;.ssh&apos;</span>, <span class="hljs-string">&apos;.Trash&apos;</span>, <span class="hljs-string">&apos;.vim&apos;</span>, <span class="hljs-string">&apos;Applications&apos;</span>, <span class="hljs-string">&apos;Desktop&apos;</span>, ...]
+</code></pre>
+<p>&#x5217;&#x51FA;&#x6240;&#x6709;<code>.py</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> os.listdir(<span class="hljs-string">&apos;.&apos;</span>) <span class="hljs-keyword">if</span> os.path.isfile(x) <span class="hljs-keyword">and</span> os.path.splitext(x)[<span class="hljs-number">1</span>]==<span class="hljs-string">&apos;.py&apos;</span>]
+[<span class="hljs-string">&apos;apis.py&apos;</span>, <span class="hljs-string">&apos;config.py&apos;</span>, <span class="hljs-string">&apos;models.py&apos;</span>, <span class="hljs-string">&apos;pymonitor.py&apos;</span>, <span class="hljs-string">&apos;test_db.py&apos;</span>, <span class="hljs-string">&apos;urls.py&apos;</span>, <span class="hljs-string">&apos;wsgiapp.py&apos;</span>]
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="stringiohe-bytesio.html" class="navigation navigation-prev " aria-label="Previous page: StringIO和BytesIO">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="xu-lie-hua.html" class="navigation navigation-next " aria-label="Next page: 序列化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"操作文件和目录","level":"1.11.3","depth":2,"next":{"title":"序列化","level":"1.11.4","depth":2,"path":"iobian-cheng/xu-lie-hua.md","ref":"iobian-cheng/xu-lie-hua.md","articles":[]},"previous":{"title":"StringIO和BytesIO","level":"1.11.2","depth":2,"path":"iobian-cheng/stringiohe-bytesio.md","ref":"iobian-cheng/stringiohe-bytesio.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"iobian-cheng/cao-zuo-wen-jian-he-mu-lu.md","mtime":"2021-02-03T02:54:29.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-03T06:53:08.490Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

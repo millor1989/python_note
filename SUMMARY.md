@@ -40,5 +40,7 @@
 * [python api](python-api.md)
   * [datetime](python-api/datetime.md)
   * [time](python-api/time.md)
+* [第三方API](third-api.md)
+  * [pyecharts](third-api/pyecharts.md)
 * [其它](qi-ta.md)
   * [调用操作系统ping命令](qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.md)

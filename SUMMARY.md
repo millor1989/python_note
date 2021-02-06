@@ -3,6 +3,7 @@
 * [简介](README.md)
 * [快速开始](kuai-su-kai-shi.md)
 * [基础](ji-chu.md)
+* [正则表达式](regular-expression.md)
 * [函数](han-shu.md)
 * [高级特性](gao-ji-te-xing.md)
 * [函数式编程](han-shu-shi-bian-cheng.md)

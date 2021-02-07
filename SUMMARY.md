@@ -41,6 +41,7 @@
 * [python api](python-api.md)
   * [datetime](python-api/datetime.md)
   * [time](python-api/time.md)
+  * [collections](python-api/collections.md)
 * [第三方API](third-api.md)
   * [pyecharts](third-api/pyecharts.md)
 * [其它](qi-ta.md)

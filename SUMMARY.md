@@ -45,6 +45,8 @@
   * [base64](python-api/base64.md)
   * [struct](python-api/struct.md)
   * [hashlib和hmac](python-api/hashlib.md)
+  * [itertools](python-api/itertools.md)
+  * [contextlib](python-api/contextlib.md)
 * [第三方API](third-api.md)
   * [pyecharts](third-api/pyecharts.md)
 * [其它](qi-ta.md)

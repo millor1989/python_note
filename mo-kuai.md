@@ -156,12 +156,71 @@ def greeting(name):
 
 #### 2、安装第三方模块
 
-Python中，使用包管理工具工具pip安装第三方模块。
+Python中，使用包管理工具pip安装第三方模块。
 
 一般来说，第三方库都会在Python官方的[pypi.org](https://pypi.org)注册，可以在官网搜索要安装的Python第三方模块名称。比如，安装Python图像处理库Pillow，命令为：
 
 ```shell
-pip install Pillow
+$ pip install Pillow
+```
+
+pip默认镜像源在国外，国内使用时会比较慢，可以通过配置让pip使用国内的镜像源。以清华镜像站为例，**临时使用镜像源**：
+
+```shell
+$ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+```
+
+**设置默认镜像源**（>=10.0.0）：
+
+```shell
+$ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+还可以通过修改`pip.conf`（linux或mac系统，对应路径`$HOME/.config/pip/pip.conf`，如果是windows则是`pip.ini`文件，对应路径`%HOME%\pip\pip.ini`）文件来设置默认镜像源，如果没有就创建这个文件，修改内容为
+
+```ascii
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+如果是非`https`的镜像源，临时使用时需要加上`--trusted-host xxxx.com`，设置默认时则要加上如下内容：
+
+```ascii
+[install]
+trusted-host=xxxxxx.com
+```
+
+或者执行命令：
+
+```shell
+$ pip config set install.trusted-host xxxxxx.com
+```
+
+设置完成后，可以使用`pip config list`命令查看配置：
+
+```shell
+$ pip config list
+global.index-url='http://mirrors.aliyun.com/pypi/simple/'
+install.trusted-host='mirrors.aliyun.com'
+```
+
+此外，查看pip的版本和安装位置：
+
+```shell
+$ pip -V
+pip 19.0.3 from c:\program files\python\lib\site-packages\pip (python 3.6)
+```
+
+升级已安装的模块：
+
+```shell
+$ pip install --upgrade scrapy
+```
+
+安装指定版本的模块：
+
+```shell
+$ pip install scipy==0.15.1
 ```
 
 ##### 2.2、安装常用模块

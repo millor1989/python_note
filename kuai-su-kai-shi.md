@@ -349,7 +349,8 @@ print("Random", random.randint(1,101))
 
 ```python
 
-'''如果要精确计算小数，
+'''Python中浮点数进行运算时会先转换为二进制，然后运算，会有精度差异。
+如果要精确计算小数，
 一定要全程使用Decimal'''
 
 from decimal import *
@@ -423,7 +424,7 @@ if age < 5:
 elif (age >= 5) and (age <= 6):
     print("Kindergarten")
 elif (age > 6) and (age <= 17):
-    print("Grade %d", (age - 5))
+    print("Grade %d" % (age - 5))
 else:
     print("College")
 
@@ -435,6 +436,25 @@ print(canVote)
     You can drive a tractor trailer
     College
     True
+
+Python 中变量可以两边比较：
+
+```python
+6 < age <= 17
+```
+
+而 JVM 语言不能这样比较，JVM 语言执行的是从左到右的运算，最终会由于是不同类型的比较而失败。
+
+```python
+if age < 5:
+    print("Stay Home")
+elif (5 <= age <= 6):
+    print("Kindergarten")
+elif (6 < age <= 17):
+    print("Grade %d"%(age - 5))
+else:
+    print("College")
+```
 
 
 
@@ -1360,7 +1380,7 @@ for i in range(10):
     Thread 7 sleeps at 09:39:37
 
 
-   
+
     Active Threads : 13
     Thread Objects : [<_MainThread(MainThread, started 1468)>, <Thread(Thread-4, started daemon 4172)>, <Heartbeat(Thread-5, started daemon 43912)>, <HistorySavingThread(IPythonHistorySavingThread, started 42668)>, <ParentPollerWindows(Thread-3, started daemon 2240)>, <Thread(Thread-36, started 33376)>, <Thread(Thread-37, started 1340)>, <Thread(Thread-38, started 37048)>, <Thread(Thread-39, started 43424)>, <Thread(Thread-40, started 43476)>, <Thread(Thread-41, started 41444)>, <Thread(Thread-42, started 41964)>, <Thread(Thread-43, started 33832)>]
     Thread 8 sleeps at 09:39:37

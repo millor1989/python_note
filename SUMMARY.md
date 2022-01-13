@@ -52,4 +52,6 @@
   * [mitmproxy](third-api/mitmproxy.md)
 * [其它](qi-ta.md)
   * [调用操作系统ping命令](qi-ta/diao-yong-cao-zuo-xi-tong-ping-ming-ling.md)
+  * [动态规划-DP](qi-ta/dp.md)
 * [外链](wai-lian.md)
+* [课程](courses.md)

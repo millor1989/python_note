@@ -1032,7 +1032,7 @@ Cast 4  &lt;class &apos;int&apos;&gt;
 print(<span class="hljs-number">12</span>, <span class="hljs-number">21</span>, <span class="hljs-number">1974</span>, sep=<span class="hljs-string">&apos;/&apos;</span>)
 
 <span class="hljs-comment"># &#x6D88;&#x9664;&#x6362;&#x884C;&#x7B26;</span>
-print(<span class="hljs-string">&quot;No Newline&quot;</span>, sep=<span class="hljs-string">&apos;&apos;</span>)
+print(<span class="hljs-string">&quot;No Newline&quot;</span>, end=<span class="hljs-string">&apos;&apos;</span>)
 
 <span class="hljs-comment"># &#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x6307;&#x6570;&#x4F7F;&#x7528;&#x2018;%e&#x2019;</span>
 print(<span class="hljs-string">&quot;\n%o4d %s %.2f %c&quot;</span> % (<span class="hljs-number">1</span>, <span class="hljs-string">&quot;Derek&quot;</span>, <span class="hljs-number">1.234</span>, <span class="hljs-string">&apos;A&apos;</span>))
@@ -1330,7 +1330,11 @@ print(<span class="hljs-string">&quot;Last &quot;</span>, str3[<span class="hljs
 print(<span class="hljs-string">&quot;1st 3 &quot;</span>, str3[<span class="hljs-number">0</span>:<span class="hljs-number">3</span>])
 
 <span class="hljs-comment"># Get every other character</span>
-<span class="hljs-comment"># &#x4E0D;&#x61C2;&#x8FD9;&#x662F;&#x561B;&#x610F;&#x601D;&#xFF1F;</span>
+<span class="hljs-comment"># &#x5207;&#x7247;&#x64CD;&#x4F5C;&#xFF0C;&#x5728; Python &#x4E2D;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x53EF;&#x8FED;&#x4EE3;&#x7684;&#x6570;&#x636E;</span>
+<span class="hljs-comment"># &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5207;&#x7247;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment"># &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5207;&#x7247;&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment"># &#x4F4D;&#x7F6E;&#x4E3A;&#x8D1F;&#x503C;&#x8868;&#x793A;&#x4ECE;&#x540E;&#x5F80;&#x524D;&#x6570;&#xFF08;-1 &#x8868;&#x793A;&#x5012;&#x6570;&#x7B2C;&#x4E00;&#x4E2A;&#xFF09;</span>
+<span class="hljs-comment"># &#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6B65;&#x957F;&#xFF08;&#x6B65;&#x957F;&#x4E3A;&#x6B63;&#x503C;&#x8868;&#x793A;&#x4ECE;&#x524D;&#x5F80;&#x540E;&#x5207;&#x7247;&#xFF0C;&#x8D1F;&#x503C;&#x8868;&#x793A;&#x4ECE;&#x540E;&#x5F80;&#x524D;&#x5207;&#x7247;&#xFF09;</span>
 print(<span class="hljs-string">&quot;Every Other &quot;</span>, str3[<span class="hljs-number">0</span>:<span class="hljs-number">-1</span>:<span class="hljs-number">2</span>]) <span class="hljs-comment"># Last is a step</span>
 
 <span class="hljs-comment"># &#x5B57;&#x7B26;&#x4E32;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7; str3[0] = &quot;a&quot;&#x6765;&#x6539;&#x53D8;&#x5B57;&#x7B26;&#x4E32;</span>
@@ -1359,9 +1363,10 @@ print(<span class="hljs-string">&quot; &quot;</span>.join([<span class="hljs-str
 <span class="hljs-comment"># &#x7528;&#x5206;&#x9694;&#x7B26;&#x6216;&#x5360;&#x4F4D;&#x7B26;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x5207;&#x5206;&#x4E3A;&#x4E00;&#x4E2A;&#x96C6;&#x5408;</span>
 print(<span class="hljs-string">&quot;A, string&quot;</span>.split(<span class="hljs-string">&quot;, &quot;</span>))
 
-<span class="hljs-comment"># &#x4F7F;&#x7528;f-string&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;</span>
+<span class="hljs-comment"># &#x4F7F;&#x7528;f-string&#xFF08;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x524D;&#x52A0; f &#x6216; F &#x524D;&#x7F00;&#xFF0C;&#x7C7B;&#x4F3C; Scala &#x7684;&#x63D2;&#x503C;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;</span>
 int1 = int2 = <span class="hljs-number">5</span>
 print(f<span class="hljs-string">&apos;{int1} + {int2} = {int1 + int2}&apos;</span>)
+<span class="hljs-comment"># &#x53E6;&#x5916;&#xFF0C;f-string &#x652F;&#x6301;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x4F7F;&#x7528; : &#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;</span>
 
 <span class="hljs-comment"># &#x5B57;&#x7B26;&#x4E32;&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;</span>
 print(<span class="hljs-string">&quot;A String&quot;</span>.lower())
@@ -1528,6 +1533,18 @@ l4 = [<span class="hljs-number">1</span>, <span class="hljs-number">3.14</span>,
 num_list = [[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>], [<span class="hljs-number">100</span>, <span class="hljs-number">200</span>, <span class="hljs-number">300</span>]]
 <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> num_list:
     print(x)
+
+<span class="hljs-comment"># for &#x63A8;&#x5BFC;&#x5F0F;</span>
+<span class="hljs-comment"># &#x57FA;&#x672C;&#x8BED;&#x6CD5; &lt;expression&gt; for &lt;item&gt; in &lt;iterable&gt; if &lt;condition&gt;</span>
+<span class="hljs-comment"># expression&#xFF1A;&#x5BF9;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x6216;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</span>
+<span class="hljs-comment"># item&#xFF1A;&#x4ECE; iterable &#x4E2D;&#x63D0;&#x53D6;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x3002;</span>
+<span class="hljs-comment"># iterable&#xFF1A;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;&#xFF08;&#x5982;&#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x7B49;&#xFF09;&#x3002;</span>
+<span class="hljs-comment"># condition&#xFF08;&#x53EF;&#x9009;&#xFF09;&#xFF1A;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF0C;&#x53EA;&#x6709;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x5143;&#x7D20;&#x624D;&#x4F1A;&#x88AB;&#x5305;&#x542B;&#x5728;&#x6700;&#x7EC8;&#x7684;&#x5217;&#x8868;&#x4E2D;&#x3002;</span>
+<span class="hljs-comment"># &#x6700;&#x540E;</span>
+<span class="hljs-comment"># &#x6700;&#x5916;&#x5C42;&#x5982;&#x679C;&#x662F;&#x2018;[]&#x2019;&#x5305;&#x62EC;&#x8868;&#x793A;&#x7ED3;&#x679C;&#x662F; list&#xFF1B;</span>
+<span class="hljs-comment"># &#x6700;&#x5916;&#x5C42;&#x5982;&#x679C;&#x662F;&#x2018;()&#x2019;&#x5305;&#x62EC;&#x8868;&#x793A;&#x7ED3;&#x679C;&#x662F; tuples;</span>
+<span class="hljs-comment"># &#x6700;&#x5916;&#x5C42;&#x662F;&#x2018;{}&#x2019;&#x65F6;&#xFF0C;&#x5982;&#x679C;expression &#x662F;&#x5B57;&#x5178;&#xFF08;&#x5373; keyExpr:valExpr &#x7684;&#x5F62;&#x5F0F;&#xFF09;&#x8868;&#x793A;&#x7ED3;&#x679C;&#x662F; dict&#xFF0C;&#x5426;&#x5219;&#x8868;&#x793A;&#x7ED3;&#x679C;&#x662F; set;</span>
+<span class="hljs-comment"># &#x6B64;&#x5916;&#x8FD8;&#x6709;&#x66F4;&#x590D;&#x6742;&#x7684;&#x5D4C;&#x5957;&#x63A8;&#x5BFC;&#x5F0F;......</span>
 </code></pre>
 <pre><code>1
 2
@@ -1612,7 +1629,9 @@ print(<span class="hljs-string">&quot;Reverse &quot;</span>, t1[::<span class="h
 <span class="hljs-comment"># Dictionaries &#x662F;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x96C6;&#x5408;</span>
 <span class="hljs-comment"># &#x952E;&#x548C;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x6DF7;&#x5408;&#x5B58;&#x5728;</span>
 <span class="hljs-comment"># &#x4E0D;&#x5141;&#x8BB8;&#x91CD;&#x590D;&#x7684;&#x952E;</span>
+<span class="hljs-comment"># Python &#x6CA1;&#x6709;&#x6570;&#x636E;&#x7C7B;&#x578B; Map&#xFF0C;&#x5B57;&#x5178;&#x76F8;&#x5F53;&#x4E8E; Map &#x7C7B;&#x578B;</span>
 <span class="hljs-comment"># &#x50CF;List&#x4E00;&#x6837;&#x652F;&#x6301;&#x63A8;&#x5BFC;&#x5F0F;&#xFF08;comprehensions&#xFF09;</span>
+
 heroes = {
     <span class="hljs-string">&quot;Superman&quot;</span>: <span class="hljs-string">&quot;Clark Kent&quot;</span>,
     <span class="hljs-string">&quot;Batman&quot;</span>: <span class="hljs-string">&quot;Bruce Wayne&quot;</span>
@@ -1760,21 +1779,21 @@ print(
 </code></pre>
 <pre><code>5
 25
-</code></pre><pre><code class="lang-python"><span class="hljs-comment"># ----- MAP -----</span>
-<span class="hljs-comment"># &#x4F7F;&#x7528;Map&#x5BF9;&#x96C6;&#x5408;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</span>
+</code></pre><pre><code class="lang-python"><span class="hljs-comment"># ----- MAP &#x51FD;&#x6570; -----</span>
+<span class="hljs-comment"># map &#x51FD;&#x6570;&#x5BF9;&#x96C6;&#x5408;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</span>
 one_to_4 = range(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>)
 times2 = <span class="hljs-keyword">lambda</span> x: x * <span class="hljs-number">2</span>
 print(list(map(times2, one_to_4)))
 </code></pre>
 <pre><code>[2, 4, 6, 8]
-</code></pre><pre><code class="lang-python"><span class="hljs-comment"># ----- FILTER -----</span>
+</code></pre><pre><code class="lang-python"><span class="hljs-comment"># ----- FILTER &#x51FD;&#x6570; -----</span>
 <span class="hljs-comment"># Filter&#x6839;&#x636E;&#x51FD;&#x6570;&#x9009;&#x62E9;&#x96C6;&#x5408;&#x7684;&#x5143;&#x7D20;</span>
 <span class="hljs-comment"># Print out the even values from a list</span>
 print(list(filter((<span class="hljs-keyword">lambda</span> x: x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>), range(<span class="hljs-number">1</span>, <span class="hljs-number">11</span>))))
 </code></pre>
 <pre><code>[2, 4, 6, 8, 10]
 </code></pre><pre><code class="lang-python"><span class="hljs-keyword">from</span> functools <span class="hljs-keyword">import</span> reduce
-<span class="hljs-comment"># ----- REDUCE -----</span>
+<span class="hljs-comment"># ----- REDUCE &#x51FD;&#x6570; -----</span>
 <span class="hljs-comment"># Reduce &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7ED3;&#x679C;</span>
 <span class="hljs-comment"># Add up the values in a list</span>
 print(reduce((<span class="hljs-keyword">lambda</span> x, y: x + y), range(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>)))
@@ -1812,7 +1831,7 @@ Please enter a number : 33
 Thank you for entering a number
 </code></pre><pre><code class="lang-python"><span class="hljs-comment"># ----- FILE IO -----</span>
 <span class="hljs-comment"># &#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x548C;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</span>
-<span class="hljs-comment"># &#x4F7F;&#x7528; with &#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x7A0B;&#x5E8F;&#x5F02;&#x5E38;&#x662F;&#x5173;&#x95ED;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment"># &#x4F7F;&#x7528; with &#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x7A0B;&#x5E8F;&#x5F02;&#x5E38;&#x65F6;&#x5173;&#x95ED;&#x6587;&#x4EF6;</span>
 <span class="hljs-comment"># &#x6A21;&#x5F0F; w &#x8986;&#x76D6;&#x6587;&#x4EF6;</span>
 <span class="hljs-comment"># &#x6A21;&#x5F0F; a &#x8FFD;&#x52A0;</span>
 <span class="hljs-keyword">with</span> open(<span class="hljs-string">&quot;mydata.txt&quot;</span>, mode=<span class="hljs-string">&quot;w&quot;</span>, encoding=<span class="hljs-string">&quot;utf-8&quot;</span>) \
@@ -2646,7 +2665,7 @@ root.mainloop()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"快速开始","level":"1.2","depth":1,"next":{"title":"基础","level":"1.3","depth":1,"path":"ji-chu.md","ref":"ji-chu.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"kuai-su-kai-shi.md","mtime":"2021-10-19T12:37:56.237Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-13T12:25:55.349Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"快速开始","level":"1.2","depth":1,"next":{"title":"基础","level":"1.3","depth":1,"path":"ji-chu.md","ref":"ji-chu.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"kuai-su-kai-shi.md","mtime":"2025-02-19T02:52:48.658Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-02-19T06:06:11.775Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

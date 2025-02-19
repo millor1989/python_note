@@ -192,7 +192,7 @@ print(ord('a'))
 print(12, 21, 1974, sep='/')
 
 # 消除换行符
-print("No Newline", sep='')
+print("No Newline", end='')
 
 # 字符串格式化，指数使用‘%e’
 print("\n%o4d %s %.2f %c" % (1, "Derek", 1.234, 'A'))
@@ -569,7 +569,11 @@ print("Last ", str3[-1])
 print("1st 3 ", str3[0:3])
 
 # Get every other character
-# 不懂这是嘛意思？
+# 切片操作，在 Python 中很常见，适用于可迭代的数据
+# 第一个参数是切片的起始位置
+# 第二个参数是切片的结束位置
+# 位置为负值表示从后往前数（-1 表示倒数第一个）
+# 第三个参数是步长（步长为正值表示从前往后切片，负值表示从后往前切片）
 print("Every Other ", str3[0:-1:2]) # Last is a step
 
 # 字符串是不可变的，不能通过 str3[0] = "a"来改变字符串
@@ -598,9 +602,10 @@ print(" ".join(["Some", "Words"]))
 # 用分隔符或占位符把字符串切分为一个集合
 print("A, string".split(", "))
 
-# 使用f-string格式化输出
+# 使用f-string（格式化字符串，字符串前加 f 或 F 前缀，类似 Scala 的插值字符串）格式化输出
 int1 = int2 = 5
 print(f'{int1} + {int2} = {int1 + int2}')
+# 另外，f-string 支持在花括号中使用 : 进行格式化
 
 # 字符串大小写转换
 print("A String".lower())
@@ -783,6 +788,18 @@ for x in [2, 4, 6]:
 num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
 for x in num_list:
     print(x)
+
+# for 推导式
+# 基本语法 <expression> for <item> in <iterable> if <condition>
+# expression：对每个元素执行的操作或表达式。
+# item：从 iterable 中提取的每个元素。
+# iterable：可迭代对象（如列表、元组、字符串等）。
+# condition（可选）：过滤条件，只有满足条件的元素才会被包含在最终的列表中。
+# 最后
+# 最外层如果是‘[]’包括表示结果是 list；
+# 最外层如果是‘()’包括表示结果是 tuples;
+# 最外层是‘{}’时，如果expression 是字典（即 keyExpr:valExpr 的形式）表示结果是 dict，否则表示结果是 set;
+# 此外还有更复杂的嵌套推导式......
 ```
 
     1
@@ -896,7 +913,9 @@ print("Reverse ", t1[::-1])
 # Dictionaries 是键值对的集合
 # 键和值可以是任何数据类型，可以混合存在
 # 不允许重复的键
+# Python 没有数据类型 Map，字典相当于 Map 类型
 # 像List一样支持推导式（comprehensions）
+
 heroes = {
     "Superman": "Clark Kent",
     "Batman": "Bruce Wayne"
@@ -1064,8 +1083,8 @@ print(
 
 
 ```python
-# ----- MAP -----
-# 使用Map对集合执行一个函数
+# ----- MAP 函数 -----
+# map 函数对集合执行一个函数
 one_to_4 = range(1, 5)
 times2 = lambda x: x * 2
 print(list(map(times2, one_to_4)))
@@ -1076,7 +1095,7 @@ print(list(map(times2, one_to_4)))
 
 
 ```python
-# ----- FILTER -----
+# ----- FILTER 函数 -----
 # Filter根据函数选择集合的元素
 # Print out the even values from a list
 print(list(filter((lambda x: x % 2 == 0), range(1, 11))))
@@ -1088,7 +1107,7 @@ print(list(filter((lambda x: x % 2 == 0), range(1, 11))))
 
 ```python
 from functools import reduce
-# ----- REDUCE -----
+# ----- REDUCE 函数 -----
 # Reduce 接收一个集合返回一个结果
 # Add up the values in a list
 print(reduce((lambda x, y: x + y), range(1, 6)))
@@ -1136,7 +1155,7 @@ print("Thank you for entering a number")
 ```python
 # ----- FILE IO -----
 # 可以保存和读取文件
-# 使用 with 可以确保程序异常是关闭文件
+# 使用 with 可以确保程序异常时关闭文件
 # 模式 w 覆盖文件
 # 模式 a 追加
 with open("mydata.txt", mode="w", encoding="utf-8") \
